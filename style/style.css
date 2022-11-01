@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Yeseva_one;
+    src: url("/fonts/yeseva_one/YesevaOne-Regular.ttf");
+  }
+@font-face {
+    font-family: Nunito;
+    src: url("/fonts/nunito-sans/NunitoSans-Regular.ttf");
+}
+@font-face {
+    font-family: NunitoLightItalic;
+    src: url("/fonts/nunito-sans/NunitoSans-LightItalic.ttf");
+}
+@font-face {
+    font-family: NunitoLight;
+    src: url("/fonts/nunito-sans/NunitoSans-Light.ttf");
+}
+body {
+    margin: 0;
+    background-color: #131313;
+}
+header {
+    max-width: 1440px;
+    margin: auto;
+}
+nav {
+    font-family: 'Nunito';
+    display: grid;
+    grid-template-columns: 15% 52% 25%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 50px 0px 93px;
+    height: 83px;
+}
+.box__company {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.box__menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.box__menu ul li {
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+.box__menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.box__menu ul li a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+.box__menu ul li:nth-child(1) > a {
+    color: #E3B873;
+}
+.box__contact {
+    display: flex;
+    justify-content: space-around;
+}
+.phonenumber {
+    align-self: center;
+    color: #E3B873;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+}
+.main__banner {
+    background-image: linear-gradient(rgb(0 0 0 / 66%), rgb(0 0 0 / 66%)), url("/images/image\ 4.3.jpg");
+    
+    height: 707px;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+.main__bannerInfo {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    width: 600px;
+    position: absolute;
+    left: 17%;
+    top: 22%;
+}
+h1 {
+    font-family: 'Yeseva_one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.box__title {
+}
+.city__name {
+    color: #E3B873;
+}
+.box__text {
+    font-family: 'NunitoLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.box__contact button {
+    font-family: 'NunitoLightItalic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 161px;
+    height: 37px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: none;
+    color: #FFFFFF;
+}
+.calculate {
+    width: 207px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    border: none;
+    font-family: 'NunitoLightItalic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.box__submit {
+    display: flex;
+    gap: 20px;
+}
+.submit {
+    width: 207px;
+    height: 51px;
+    background: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    font-family: 'NunitoLightItalic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
