@@ -18,17 +18,23 @@ body {
     margin: 0;
     background-color: #131313;
 }
+
 header {
     max-width: 1440px;
     margin: auto;
 }
+.main__bannerInfo, .completed__projects {
+    max-width: 1165px;
+    margin: auto;
+}
+/***** menu *****/
 nav {
     font-family: 'Nunito';
     display: grid;
-    grid-template-columns: 15% 52% 25%;
+    grid-template-columns: 20% 45% 30%;
     align-items: center;
-    justify-content: space-around;
-    margin: 0px 50px 0px 93px;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 83px;
 }
 .box__company {
@@ -38,6 +44,7 @@ nav {
     line-height: 15px;
     text-transform: uppercase;
     color: #E3B873;
+    padding-left: 100px;
 }
 .box__menu ul{
     display: flex;
@@ -64,6 +71,7 @@ nav {
 .box__contact {
     display: flex;
     justify-content: space-around;
+    padding-right: 81px;
 }
 .phonenumber {
     align-self: center;
@@ -75,24 +83,23 @@ nav {
     line-height: 15px;
     text-align: right;
 }
+/***** menu *****/
+
 .main__banner {
     background-image: linear-gradient(rgb(0 0 0 / 66%), rgb(0 0 0 / 66%)), url("/images/image\ 4.3.jpg");
-    
     height: 707px;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 145%;
     background-position: center;
-    position: relative;
+    /* display: flex; */
 }
 .main__bannerInfo {
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
-    width: 600px;
-    position: absolute;
-    left: 17%;
-    top: 22%;
+    padding-top: 150px;
+    /* align-items: center; */
 }
+
 h1 {
     font-family: 'Yeseva_one';
     font-style: normal;
@@ -102,7 +109,31 @@ h1 {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.box__title {
+h2 {
+    font-family: 'Yeseva_one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+h3 {
+    font-family: 'Yeseva_one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+h4 {
+    font-family: 'Yeseva_one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
 }
 .city__name {
     color: #E3B873;
@@ -131,6 +162,10 @@ h1 {
     border-radius: 2px;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
+}
+.box__title {
+    max-width: 575px;
 }
 .calculate {
     width: 207px;
@@ -146,6 +181,7 @@ h1 {
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .box__submit {
     display: flex;
@@ -165,4 +201,138 @@ h1 {
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.block1 p {
+    font-family: 'NunitoLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.block2 div p {
+    font-family: 'NunitoLight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    /* line-height: 21px; */
+    color: #FFFFFF;
+}
+.completed__projects {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+.block1 {
+    margin-bottom: 30px;
+}
+.block2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+.nav__projects__photo {
+    padding-bottom: 25px;
+}
+.nav__projects__photo ul {
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+.nav__projects__photo ul li.active {
+    color: #E3B873;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E3B873;
+    line-height: 15px;
+}
+.nav__projects__photo ul li {
+    font-family: 'Yeseva_one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+.completed__projects__photo {
+    display: flex;
+    flex-direction: column;
+}
+/***** arrows&dots *****/
+.block_arrows {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* align-items: center; */
+  }
+  .arrow__box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .arrow__box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .right__arrow {
+    width: 41px;
+    border-bottom: 1px solid white;
+  }
+  .left__arrow {
+    width: 41px;
+    border-bottom: 1px solid white;
+  }
+  .arrow1 {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+  }
+  
+  .arrow2 {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    left: 31px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.camera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.line {
+    border-bottom: 1px solid #E3B873;
+    width: 32px;
+}
+.online__control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
