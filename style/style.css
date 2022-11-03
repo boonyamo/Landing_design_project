@@ -1,18 +1,18 @@
 @font-face {
     font-family: Yeseva_one;
-    src: url("/fonts/yeseva_one/YesevaOne-Regular.ttf");
+    src: url("../fonts/yeseva_one/YesevaOne-Regular.ttf");
   }
 @font-face {
     font-family: Nunito;
-    src: url("/fonts/nunito-sans/NunitoSans-Regular.ttf");
+    src: url("../fonts/nunito-sans/NunitoSans-Regular.ttf");
 }
 @font-face {
     font-family: NunitoLightItalic;
-    src: url("/fonts/nunito-sans/NunitoSans-LightItalic.ttf");
+    src: url("../fonts/nunito-sans/NunitoSans-LightItalic.ttf");
 }
 @font-face {
     font-family: NunitoLight;
-    src: url("/fonts/nunito-sans/NunitoSans-Light.ttf");
+    src: url("../fonts/nunito-sans/NunitoSans-Light.ttf");
 }
 body {
     margin: 0;
@@ -86,7 +86,7 @@ nav {
 /***** menu *****/
 
 .main__banner {
-    background-image: linear-gradient(rgb(0 0 0 / 66%), rgb(0 0 0 / 66%)), url("/images/image\ 4.3.jpg");
+    background-image: linear-gradient(rgb(0 0 0 / 66%), rgb(0 0 0 / 66%)), url("../images/image\ 4.3.jpg");
     height: 707px;
     background-repeat: no-repeat;
     background-size: 145%;
