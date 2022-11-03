@@ -260,6 +260,13 @@ h4 {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
+.completed__projects__desc {
+    display: flex;
+    flex-direction: column;
+}
+.block_arrows {
+    margin-top: 20px;
+}
 .completed__projects__photo {
     display: flex;
     flex-direction: column;
@@ -268,8 +275,9 @@ h4 {
 .block_arrows {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    /* align-items: center; */
+    gap: 20px;
+    align-items: center;
+    width: 240px;
   }
   .arrow__box1 {
     display: flex;
@@ -315,12 +323,17 @@ h4 {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
+  .dot:nth-child(1) {
+    background: rgba(255, 255, 255);
+  }
   .dot {
     height: 10px;
     width: 10px;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 .camera {
     display: flex;
