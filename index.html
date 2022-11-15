@@ -32,8 +32,8 @@
            <h1 class="box__title">Turnkey Repair in the city of <span class="city__name">Rostov-on-Don</span></h1>
            <p class="box__text"> Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work</p>
             <div class="box__submit">
-                <button type="button" class="calculate">CALCULATE THE COST</button>
-                <button type="button" class="submit">SUBMIT YOUR APPLICATION </button>
+                <button type="button" class="submit calculate">CALCULATE THE COST</button>
+                <button type="button" class="submit send">SUBMIT YOUR APPLICATION </button>
             </div>
         </div>
     </section>
@@ -107,23 +107,23 @@
             <p>
                 At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
             </p>
-            <form class="apply__button">
-                <div class="apply__input">
+            <form class="apply__form">
+                <div class="apply">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="What is your name:">
                 </div>
-                <div class="apply__input">
+                <div class="apply">
                     <label for="phone">Phone:</label>
                     <input type="text" id="phone" name="phone" placeholder="Your phone number:">
                 </div>
                 <div>
-                    <button type="button" class="calculate">SUBMIT</button>
+                    <button type="button" class="submit online">SUBMIT</button>
                 </div>
                 <div class="checkbox"> 
                     <label class="agreeTo">
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>I agree to the processing of personal data
-                      </label>
+                    </label>
                 </div>    
             </form>
         </div>
@@ -131,103 +131,120 @@
     <section class="types__of__repair">
         <div class="container">
             <h4 class="title__white">types of repair</h4>
-            <div class="camera">
-                <div class="line"></div>
-                <img src="images/repair.svg" alt="">
-                <div class="line"></div>
-            </div>
-            <div class="repair__prices">
-                <div class="redecorating">
-                    <img src="/images/redecorating.jpeg" alt="">
-                    <div>
-                        <p>Redecorating</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                    </div>
-                    <div class="price">
-                        from 900 rub/m<sup>2</sup>
-                    </div>
-                </div>
-                <div class="overhaul">
-                    <img src="/images/overhaul.jpeg" alt="">
-                    <div>
-                        <p>Overhaul</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                    </div>
-                    <div class="price">
-                        from 1800 rub/m<sup>2</sup>
+                <div class="camera">
+                    <div class="line"></div>
+                    <img src="images/repair.svg" alt="">
+                    <div class="line"></div>
+               </div>
+               <div class="repair__prices">
+                    <div class="redecorating">
+                        <img src="/images/redecorating.jpeg" alt="">
+                        <div>
+                            <p>Redecorating</p>
+                                <ul>
+                                    <li>Dismantling of old coatings</li>
+                                    <li>Wallpapering</li>
+                                    <li>Painting walls and ceilings</li>
+                                    <li>Laying flooring</li>
+                                    <li>Replacing plumbing</li>
+                                    <li>Replacing sockets and switches</li>
+                                    <li>Replacing doors</li>
+                                </ul>
+                        </div>
+                        <div class="price">
+                            from 900 rub/m<sup>2</sup>
+                        </div>
                     </div>
                 </div>
-                <div class="designer__repair">
-                    <img src="/images/designer__repair.jpeg" alt="">
-                    <div>
-                        <p>Designer repair</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                    </div>
-                    <div class="price">
-                        from 4000 rub/m<sup>2</sup>
+                <div class="repair__prices">
+                    <div class="overhaul">
+                            <img src="/images/overhaul.jpeg" alt="">
+                            <div>
+                                <p>Overhaul</p>
+                                <ul>
+                                    <li>Dismantling of old coatings</li>
+                                    <li>Wallpapering</li>
+                                    <li>Painting walls and ceilings</li>
+                                    <li>Laying flooring</li>
+                                    <li>Replacing plumbing</li>
+                                    <li>Replacing sockets and switches</li>
+                                    <li>Replacing doors</li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                from 1800 rub/m<sup>2</sup>
+                            </div>
                     </div>
                 </div>
-            </div>
-            <div class="leave__request">
-                <div class="request__benefits">
-                    <div class="benefits1">
-                        <div class="round__circle">1</div>
+                <div class="repair__prices">
+                    <div class="designer__repair">
+                        <img src="/images/designer__repair.jpeg" alt="">
+                        <div>
+                            <p>Designer repair</p>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="price">
+                            from 4000 rub/m<sup>2</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="request__benefits">
+                    <div class="benefits">
+                        <div class="round__circle"><div>1</div></div>
                         <p>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
                     </div>
-                    <div class="benefits2">
+                    <div class="benefits">
                         <div class="round__circle">2</div>
                         <p>Free metering</p>
                     </div>
-                    <div class="benefits3">
+                    <div class="benefits">
                         <div class="round__circle">3</div>
                         <p>Free consultation</p>
                     </div>
-                    <div class="benefits4">
+                    <div class="benefits">
                         <div class="round__circle">4</div>
                         <p>Get a cost estimate and the timing of your future repairs</p>
                     </div>
+                    </div>
+                    <form class="request__form">
+                    <p>Leave a request for free
+                        departure of the measurer</p>
+                    <div class="apply white">
+                        <label for="name1">Name:</label>
+                        <input type="text" id="name1" name="name1" placeholder="What is your name:">
+                    </div>
+                    <div class="apply white">
+                        <label for="phone1">Phone:</label>
+                        <input type="text" id="phone1" name="phone1" placeholder="Your phone number:">
+                    </div>
+                    <div class="apply white">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Your email:">
+                    </div>
+                    <div class="checkbox"> 
+                        <label class="agreeTo">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>I agree to the processing of personal data
+                        </label>
+                    </div>  
+                    <div>
+                        <button type="button" class="submit measurer">CALL THE MESUARER</button>
+                    </div>  
+                    </form>
+                    <div class="piggy">
+                        <img src="/images/pig.svg" alt="">
+                        Help save 10 - 20% of the cost of materials
+                    </div>
                 </div>
-                <form action="" class="request">
-                    <p>Leave a request for free departure of the measurer</p>
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Phone</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="lname">Email</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I agree to the processing of personal data</label><br>
-                    <button type="button">Call the measurer</button>
-                </form>
-            </div>
-            <div class="piggy">
-                <img src="/images/pig.svg" alt="">
-                Help save 10 - 20% of the cost of materials
-            </div>
         </div>
     </section>
     <section class="wildest__fantasies">
@@ -272,7 +289,10 @@
                         <p>Fedosova Maria Konstantinovna</p>
                     </div>
                     <div class="persona__story">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</div>
-                    <div class="persona__task"></div>
+                    <div class="persona__task">
+                        <div class="area"><img src="/images/Group 21.4.svg" alt="">40 m<sup>2</sup></div>
+                        <div class="duaration"><img src="/images/Group.svg" alt="">48 DAYS</div>
+                    </div>
                 </div>
                 <div>
                     <div class="personsa__name">
@@ -280,6 +300,10 @@
                         <p>Afanasyev Sergey Alexandrovich</p>
                     </div>
                     <div class="persona__story">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices  democratic. I recommend these masters.</div>
+                    <div class="persona__task">
+                        <div class="area"><img src="/images/Group 21.4.svg" alt="">90 m<sup>2</sup></div>
+                        <div class="duaration"><img src="/images/Group.svg" alt="">128 DAYS</div>
+                    </div>
                 </div>
                 <div>
                     <div class="personsa__name">
@@ -287,9 +311,66 @@
                         <p>Kiriev Egor Leonidovich</p>
                     </div>
                     <div class="persona__story">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</div>
+                    <div class="persona__task">
+                        <div class="area"><img src="/images/Group 21.4.svg" alt="">56 m<sup>2</sup></div>
+                        <div class="duaration"><img src="/images/Group.svg" alt="">86 DAYS</div>
+                    </div>
                 </div>
+            </div>
+            <form class="question__form">
+                <h4>have any questions?</h4>
+                <div class="apply">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="What is your name:">
+                </div>
+                <div class="apply">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number:">
+                </div>
+                <div class="apply">
+                    <label for="phone">Question:</label>
+                    <input type="text" id="phone" name="phone" placeholder="I want to know:">
+                </div>
+                <div class="checkbox"> 
+                    <label class="agreeTo">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>I agree to the processing of personal data
+                      </label>
+                </div>    
+                <div>
+                    <button type="button" class="calculate">SUBMIT</button>
+                </div>
+            </form>
+            <div class="address">
+                <p>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
+                <img src="/images/mail.svg" alt="">
+                <img src="/images/insta.svg" alt="">
             </div>
         </div>
     </section>
+    <section class="contact__map">
+        <div class="container map">
+            <img src="/images/map.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="container top">
+            <div class="box__company">IC "Repair Design Project"</div>
+                <nav class="box__menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">MEASUREMENT</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            <div class="box__contact">
+                <div class="phonenumber">+7 (928) 768-32-39</div>
+                <button type="button">REQUEST A CALL</button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

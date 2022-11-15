@@ -23,6 +23,7 @@ body {
   padding: 5px 85px;
   box-sizing: border-box;
   display: flex;
+  border: 1px solid #f44336;
 }
 header {
   background-color: #131313;
@@ -128,32 +129,37 @@ h4 {
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.calculate {
-  width: 207px;
-  height: 51px;
+.submit {
   background: rgb(227, 184, 115);
   border-radius: 2px;
   border: none;
-  font-family: NunitoLightItalic;
   font-size: 11px;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+.calculate {
+  width: 207px;
+  height: 51px;
+  font-family: NunitoLightItalic;
+}
+.send {
+  width: 207px;
+  height: 51px;
+  border: 1px solid white;
+  background: none;
+  font-family: NunitoLightItalic;
+}
+.measurer, .online {
+  width: 200px;
+  height: 51px;
+  font-family: NunitoLight;
+}
+
 .box__submit {
   display: flex;
   gap: 20px;
 }
-.submit {
-  width: 207px;
-  height: 51px;
-  background: none;
-  border-radius: 2px;
-  border: 1px solid rgb(255, 255, 255);
-  font-family: NunitoLightItalic;
-  font-size: 11px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 .block1 p {
   font-family: NunitoLight;
   font-style: normal;
@@ -326,32 +332,70 @@ hr {
   border: 1px solid rgb(227, 184, 115);
   margin-top: 50px;
 }
-.apply__button input {
+
+.apply label, input {
+  padding: 5px;
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 23px;
   outline: 0;
   border-width: 0 0 1px;
   border-color: rgba(54, 54, 54, 0.3);
 }
-.apply__button {
+.apply.white label, input {
+  padding: 5px;
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 23px;
+  outline: 0;
+  border-width: 0 0 1px;
+  color: rgba(255, 255, 255, 0.5);
+  background: none;
+}
+.apply.white {
+  display: flex;
+  flex-direction: column;
+}
+.apply label {
+  color: rgba(54, 54, 54, 0.5);
+}
+.apply input {
+  color: rgba(54, 54, 54);
+}
+::placeholder {
+  color: rgba(54, 54, 54);
+}
+.apply__form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 40px;
   margin-top: 50px;
 }
-.apply__button div:nth-of-type(4) {
+.apply__form div:nth-of-type(4) {
   grid-column: 1/4;
 }
-.apply__button div label, input {
-  padding: 5px;
-  font-family: NunitoLight;
-  font-size: 14px;
-  line-height: 23px;
-}
-.apply__input {
+.apply__form input{
   width: 231px;
   display: flex;
   flex-direction: column;
-  color: rgba(54, 54, 54, 0.5);
+}
+
+.request__form {
+  padding: 20px;
+  background-color: #131313;
+}
+.request__form p {
+  color: #fff;
+  font-family: NunitoLight;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+color: #FFFFFF;
+}
+.question__form {
+  padding: 20px;
 }
 .checkbox {
   text-align: center;
@@ -359,14 +403,10 @@ hr {
 .agreeTo {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 23px;
 }
 .agreeTo input {
   position: absolute;
@@ -377,10 +417,9 @@ hr {
 }
 .checkmark {
   position: absolute;
-  top: 4px;
-  left: 230px;
-  height: 20px;
-  width: 20px;
+  left: 240px;
+  height: 15px;
+  width: 15px;
   background-color: #fff;
   border: 2px #E3B873 solid;
 }
@@ -399,10 +438,10 @@ hr {
   display: block;
 }
 .agreeTo .checkmark:after {
-  left: 6px;
-  top: 3px;
-  width: 5px;
-  height: 8px;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(35deg);
@@ -410,13 +449,38 @@ hr {
   transform: rotate(35deg);
 }
 
+
+.benefits {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.benefits p {
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363636;
+}
+.round__circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  
+}
+.round__circle div {
+  background-color: #E3B873;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.request {
+    padding: 10px;
+}
+
 .types__of__repair {
   position: relative;
   bottom: 300px;
-}
-.repair__prices {
-  display: flex;
-  gap: 30px;
 }
 .repair__prices img {
   width: 392px;
@@ -446,9 +510,13 @@ hr {
   width: 228px;
 }
 .types__of__repair  > .container {
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.types__of__repair p {
+.types__of__repair h4, .camera, .request {
+  grid-column: 1/4;
+}
+.redecorating p {
   font-family: Yeseva_one;
   font-size: 18px;
   line-height: 25px;
@@ -465,9 +533,14 @@ hr {
   line-height: 27px;
   color: #959595;
 }
-.leave__request {
+
+.request {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  background-image: url("../images/image\ 6.1.png");
+  height: 645px;
+  background-repeat: no-repeat;
 }
 
 .fantasies {
@@ -510,6 +583,10 @@ img.img4 {
   line-height: 25px;
   color: #E3B873;
 }
+section.our__clients {
+  position: relative;
+  top: 60px;
+}
 .our__clients > .container {
   flex-direction: column;
   align-items: center;
@@ -528,6 +605,7 @@ img.img4 {
 }
 .personas > div {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  padding: 30px;
 }
 .personsa__name img {
   border-radius: 50%;
@@ -543,4 +621,37 @@ img.img4 {
   font-size: 13px;
   line-height: 23px;
   color: #959595;
+}
+.persona__task {
+  background-color: #E3B873;
+  font-family: Yeseva_one;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 293px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid white;
+  padding: 10px 15px 10px 10px;
+}
+.duaration {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+footer {
+  height: 133px;
+  background-color: #131313;
 }
