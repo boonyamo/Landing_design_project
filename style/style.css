@@ -31,10 +31,13 @@ header {
 .container.top {
   font-family: Nunito;
   font-size: 11px;
-  display: grid;
-  grid-template-columns: 15% 55% 30%;
   align-items: center;
-  height: 75px;
+  height: 83px;
+  flex-direction: row;
+  column-gap: 70px;
+}
+nav.box__menu {
+  flex-grow: 2;
 }
 .box__company {
   text-transform: uppercase;
@@ -75,17 +78,27 @@ header {
 }
 .main__banner > .container {
   flex-direction: column;
+  position: relative;
+  top: 150px;
+  right: 375px;
+  width: 700px;
+
 } 
+
+/********************Headers********************/
 h1 {
   font-family: Yeseva_one;
   font-size: 40px;
+  font-weight: 200;
   line-height: 53px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
+
 h2 {
   font-family: Yeseva_one;
   font-size: 27px;
+  font-weight: 200;
   line-height: 37px;
   letter-spacing: -0.07em;
   text-transform: uppercase;
@@ -94,18 +107,25 @@ h2 {
 h3 {
   font-family: Yeseva_one;
   font-size: 18px;
+  font-weight: 200;
   text-transform: uppercase;
   color: rgb(227, 184, 115);
 }
 h4 {
   font-family: Yeseva_one;
   font-size: 20px;
+  font-weight: 200;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
+/********************Headers********************/
+
+/********************change h4 color********************/
 .title__white {
   color:#131313;
 }
+/********************change h4 color********************/
+
 .city__name {
   color: rgb(227, 184, 115);
 }
@@ -116,39 +136,38 @@ h4 {
   color: rgb(255, 255, 255);
   margin-bottom: 25px;
 }
-.box__contact button {
+
+
+/***************all buttons style***************/
+.submit {
   font-family: NunitoLightItalic;
   font-size: 11px;
+  background: rgb(227, 184, 115);
+  border-radius: 2px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+/***************button in header***************/
+.box__contact button {
+  font-family: NunitoLightItalic;
   text-align: center;
   text-transform: uppercase;
   width: 161px;
   height: 37px;
-  background: rgb(227, 184, 115);
-  border-radius: 2px;
-  border: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
 }
-.submit {
-  background: rgb(227, 184, 115);
-  border-radius: 2px;
-  border: none;
-  font-size: 11px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
+/***************button in main__banner***************/
 .calculate {
   width: 207px;
   height: 51px;
-  font-family: NunitoLightItalic;
 }
 .send {
   width: 207px;
   height: 51px;
   border: 1px solid white;
   background: none;
-  font-family: NunitoLightItalic;
 }
+/***************button in apply__form****************/
 .measurer, .online {
   width: 200px;
   height: 51px;
@@ -184,6 +203,10 @@ h4 {
   bottom: 415px;
 }
 .completed__projects {
+  background-color: #131313;
+  padding-bottom: 400px;
+}
+.completed__projects > .container {
   flex-direction: row;
   gap: 55px;
   align-items: flex-end;
@@ -308,7 +331,11 @@ h4 {
   width: 32px;
 }
 .online__control {
-  padding-top: 80px;
+  position: relative;
+  bottom: 375px;
+}
+.online__control > .container {
+  /* padding-top: 57px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,15 +367,10 @@ hr {
   line-height: 23px;
   outline: 0;
   border-width: 0 0 1px;
-  border-color: rgba(54, 54, 54, 0.3);
+  border-color: rgba(54, 54, 54, 0.3);;
+  color: rgba(54, 54, 54, 0.5);
 }
 .apply.white label, input {
-  padding: 5px;
-  font-family: NunitoLight;
-  font-size: 14px;
-  line-height: 23px;
-  outline: 0;
-  border-width: 0 0 1px;
   color: rgba(255, 255, 255, 0.5);
   background: none;
 }
@@ -356,14 +378,8 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.apply label {
-  color: rgba(54, 54, 54, 0.5);
-}
-.apply input {
-  color: rgba(54, 54, 54);
-}
 ::placeholder {
-  color: rgba(54, 54, 54);
+  color: black;
 }
 .apply__form {
   display: grid;
@@ -491,13 +507,14 @@ color: #FFFFFF;
   flex-direction: column;
   align-items: center;
 }
-.overhaul div, .redecorating div, .designer__repair div {
-  background-color: #fff;
-  padding: 25px;
-  position: relative;
-  bottom: 150px;
-  width: 330px;
-  box-sizing: border-box;
+.container > .block {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  justify-content: center;
+}
+.overhaul, .redecorating, .designer__repair {
+  padding: 10PX;
 }
 .price {
   background-color: #E3B873 !important;
@@ -512,11 +529,14 @@ color: #FFFFFF;
 .types__of__repair  > .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px 0px;
 }
 .types__of__repair h4, .camera, .request {
   grid-column: 1/4;
+  justify-content: center;
+  text-align: center;
 }
-.redecorating p {
+.types__of__repair p {
   font-family: Yeseva_one;
   font-size: 18px;
   line-height: 25px;
