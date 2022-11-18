@@ -1,3 +1,4 @@
+/********************Fonts********************/
 @font-face {
   font-family: Yeseva_one;
   src: url("../fonts/yeseva_one/YesevaOne-Regular.ttf");
@@ -14,13 +15,15 @@
   font-family: NunitoLight;
   src: url("../fonts/nunito-sans/NunitoSans-Light.ttf");
 }
+/********************Fonts********************/
+
 body {
   margin: 0;
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 5px 85px;
+  padding: 0px 100px;
   box-sizing: border-box;
   display: flex;
   border: 1px solid #f44336;
@@ -43,6 +46,7 @@ nav.box__menu {
   text-transform: uppercase;
   color: rgb(227, 184, 115);
 }
+
 .box__menu ul {
   display: flex;
   justify-content: space-around;
@@ -75,14 +79,15 @@ nav.box__menu {
   background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../images/image 4.3.jpg");
   height: 707px;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 .main__banner > .container {
   flex-direction: column;
   position: relative;
   top: 150px;
-  right: 375px;
-  width: 700px;
-
+  right: 323px;
+  width: 800px;
 } 
 
 /********************Headers********************/
@@ -320,7 +325,7 @@ h4 {
   margin-left: 10px;
   margin-right: 10px;
 }
-.camera {
+.icon {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -335,7 +340,6 @@ h4 {
   bottom: 375px;
 }
 .online__control > .container {
-  /* padding-top: 57px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,26 +364,32 @@ hr {
   margin-top: 50px;
 }
 
+/***************areas in forms****************/
 .apply label, input {
-  padding: 5px;
   font-family: NunitoLight;
   font-size: 14px;
   line-height: 23px;
   outline: 0;
   border-width: 0 0 1px;
-  border-color: rgba(54, 54, 54, 0.3);;
+  border-color: rgba(54, 54, 54, 0.3);
   color: rgba(54, 54, 54, 0.5);
 }
 .apply.white label, input {
   color: rgba(255, 255, 255, 0.5);
   background: none;
+  padding: 0;
 }
 .apply.white {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
+  text-align: left;
 }
-::placeholder {
-  color: black;
+.apply input::placeholder {
+  color: #363636;
+}
+.apply.white input::placeholder {
+  color: white;
 }
 .apply__form {
   display: grid;
@@ -390,16 +400,22 @@ hr {
 }
 .apply__form div:nth-of-type(4) {
   grid-column: 1/4;
+  margin: 0 auto;
+}
+.request__form div:nth-of-type(3) {
+  padding-bottom: 20px;
 }
 .apply__form input{
   width: 231px;
   display: flex;
   flex-direction: column;
 }
-
 .request__form {
-  padding: 20px;
+  padding: 30px 50px;
   background-color: #131313;
+  margin-right: 85px;
+  margin-left: 120px;
+  display: grid;
 }
 .request__form p {
   color: #fff;
@@ -407,53 +423,130 @@ hr {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 .question__form {
-  padding: 20px;
+  /*padding: 20px;*/
 }
+/* The container */
 .checkbox {
-  text-align: center;
-}
-.agreeTo {
   display: block;
   position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
   cursor: pointer;
-  font-family: NunitoLight;
-  font-size: 14px;
-  line-height: 23px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.agreeTo input {
+
+/* Hide the browser's default checkbox */
+.checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
+
+/* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  left: 240px;
-  height: 15px;
-  width: 15px;
-  background-color: #fff;
-  border: 2px #E3B873 solid;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
 }
-.agreeTo:hover input ~ .checkmark {
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
   background-color: #E3B873;
 }
-.agreeTo input:checked ~ .checkmark {
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
   background-color: #E3B873;
 }
+
+/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.agreeTo input:checked ~ .checkmark:after {
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
   display: block;
 }
-.agreeTo .checkmark:after {
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+label.checkbox {
+  color: #363636;
+  font-family: NunitoLight;
+  font-size: 14px;
+  }
+.agreeTo {
+  text-align: left;
+}
+.callTo {
+  text-align: right;
+}
+/*.checkbox {
+  text-align: center;
+}*/
+/*.agreeTo {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 23px;
+}*/
+/*.agreeTo input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}*/
+/*.checkmark {
+  position: absolute;
+  left: 230px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 2px #E3B873 solid;
+}*/
+/*.agreeTo:hover input ~ .checkmark {
+  background-color: #E3B873;
+}*/
+/*.agreeTo input:checked ~ .checkmark {
+  background-color: #E3B873;
+}*/
+/*.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}*/
+/*.agreeTo input:checked ~ .checkmark:after {
+  display: block;
+}*/
+/*.agreeTo .checkmark:after {
   left: 5px;
   top: 1px;
   width: 4px;
@@ -463,60 +556,40 @@ color: #FFFFFF;
   -webkit-transform: rotate(35deg);
   -ms-transform: rotate(35deg);
   transform: rotate(35deg);
-}
-
-
-.benefits {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.benefits p {
-  font-family: NunitoLight;
-  font-size: 14px;
-  line-height: 19px;
-  color: #363636;
-}
-.round__circle {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  background-color: #fff;
-  
-}
-.round__circle div {
-  background-color: #E3B873;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.request {
-    padding: 10px;
-}
+}*/
+/***************areas in forms****************/
 
 .types__of__repair {
   position: relative;
   bottom: 300px;
 }
+.types__of__repair  > .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 5px 0px;
+}
 .repair__prices img {
   width: 392px;
   height: 421px;
 }
-.overhaul, .redecorating, .designer__repair {
+.repair__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px 75px;
+}
+.repair__type {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container > .block {
-  display: flex;
-  flex-direction: row;
-  column-gap: 40px;
-  justify-content: center;
+.repair__type__desc div {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  bottom: 100px;
+  padding: 10px 110px 30px 45px;
 }
-.overhaul, .redecorating, .designer__repair {
-  padding: 10PX;
-}
-.price {
+.repair__type__desc > .price  {
   background-color: #E3B873 !important;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   font-family: Yeseva_one;
@@ -524,26 +597,21 @@ color: #FFFFFF;
   line-height: 25px;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 228px;
-}
-.types__of__repair  > .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 5px 0px;
-}
-.types__of__repair h4, .camera, .request {
-  grid-column: 1/4;
-  justify-content: center;
+  width: 225px;
+  padding: 15px 10px;
+  box-sizing: border-box;
   text-align: center;
+  position: relative;
+  bottom: 130px;
 }
-.types__of__repair p {
+.repair__type__desc div p {
   font-family: Yeseva_one;
   font-size: 18px;
   line-height: 25px;
   color: #363636;
 }
 .types__of__repair ul {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .types__of__repair li {
   font-family: NunitoLight;
@@ -553,14 +621,80 @@ color: #FFFFFF;
   line-height: 27px;
   color: #959595;
 }
-
+.types__of__repair h4, .icon, .request {
+  grid-column: 1/4;
+  justify-content: center;
+  text-align: center;
+}
 .request {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-image: url("../images/image\ 6.1.png");
-  height: 645px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding-top: 80px;
+  background-image: url(../images/image\ 6.1.png);
+  background-position-y: bottom;
   background-repeat: no-repeat;
+  align-items: flex-start;
+}
+.piggy {
+  grid-column: 1/3;
+}
+.piggy div {
+  display: flex;
+  justify-content: end;
+  column-gap: 30px;
+  margin: 0px 280px;
+}
+.piggy div p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgb(227 184 115 / 15%);
+    text-align: left;
+}
+.piggy img {
+  background-color: #E3B873;
+  border: 15px solid #E3B873;
+  width: 50px;
+  height: 53px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+}
+.request__benefits {
+  margin-left: 260px;
+  margin-right: 66px;
+  display: grid;
+  align-items: center;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  padding-bottom: 75px;
+}
+.benefits p {
+  font-family: NunitoLight;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363636;
+  text-align: left;
+  align-self: center;
+}
+.round__circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(227 184 115);
+  border: 8px solid white;
+  color: white;
+  font-family: 'Yeseva_one';
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fantasies {

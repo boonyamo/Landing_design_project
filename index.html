@@ -101,7 +101,7 @@
     <section class="online__control">
         <div class="container">
             <h4>online control</h4>
-            <div class="camera">
+            <div class="icon">
                 <div class="line"></div>
                 <img src="images/Vector.svg" alt="">
                 <div class="line"></div>
@@ -126,10 +126,10 @@
                 <div>
                     <button type="button" class="submit online">SUBMIT</button>
                 </div>
-                <div class="checkbox">
-                    <label class="agreeTo">
+                <div>
+                    <label class="checkbox">I agree to the processing of personal data
                         <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>I agree to the processing of personal data
+                        <span class="checkmark"></span>
                     </label>
                 </div>
             </form>
@@ -138,79 +138,76 @@
     <section class="types__of__repair">
         <div class="container">
             <h4 class="title__white">types of repair</h4>
-            <div class="camera">
+            <div class="icon">
                 <div class="line"></div>
                 <img src="images/repair.svg" alt="">
                 <div class="line"></div>
             </div>
-            <div class="block">
-                <div class="redecorating">
-
+            <div class="repair__block">
+                <div class="repair__type">
                     <img src="/images/redecorating.jpeg" alt="">
-                    <div>
-                        <p>Redecorating</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
+                    <div class="repair__type__desc">
+                        <div>
+                            <p>Redecorating</p>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="price">from 900 rub/m<sup>2</sup>
+                        </div>
                     </div>
-                    <div class="price">
-                        from 900 rub/m<sup>2</sup>
-                    </div>
-
                 </div>
-                <div class="overhaul">
-
+                <div class="repair__type">
                     <img src="/images/overhaul.jpeg" alt="">
-                    <div>
-                        <p>Overhaul</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
+                    <div class="repair__type__desc">
+                        <div>
+                            <p>Overhaul</p>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="price">
+                            from 1800 rub/m<sup>2</sup>
+                        </div>
                     </div>
-                    <div class="price">
-                        from 1800 rub/m<sup>2</sup>
-                    </div>
-
                 </div>
-                <div class="designer__repair">
-
+                <div class="repair__type">
                     <img src="/images/designer__repair.jpeg" alt="">
-                    <div>
-                        <p>Designer repair</p>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
+                    <div class="repair__type__desc">
+                        <div>
+                            <p>Designer repair</p>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="price">
+                            from 4000 rub/m<sup>2</sup>
+                        </div>
                     </div>
-                    <div class="price">
-                        from 4000 rub/m<sup>2</sup>
-                    </div>
-
                 </div>
             </div>
             <div class="request">
                 <div class="request__benefits">
                     <div class="benefits">
-                        <div class="round__circle">
-                            <div>1</div>
-                        </div>
+                        <div class="round__circle">1</div>
                         <p>Our specialist will arrive for measurements per day contact, or appoint a date convenient for
                             you</p>
                     </div>
@@ -224,12 +221,11 @@
                     </div>
                     <div class="benefits">
                         <div class="round__circle">4</div>
-                        <p>Get a cost estimate and the timing of your future repairs</p>
+                        <p>Get a cost estimate<br>and the timing of your future repairs</p>
                     </div>
                 </div>
                 <form class="request__form">
-                    <p>Leave a request for free
-                        departure of the measurer</p>
+                    <p>Leave a request for free<br>departure of the measurer</p>
                     <div class="apply white">
                         <label for="name1">Name:</label>
                         <input type="text" id="name1" name="name1" placeholder="What is your name:">
@@ -242,19 +238,21 @@
                         <label for="email">Email:</label>
                         <input type="text" id="email" name="email" placeholder="Your email:">
                     </div>
-                    <div class="checkbox">
-                        <label class="agreeTo">
+                    <div class="agreeTo">
+                        <label class="checkbox">I agree to the processing of personal data
                             <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>I agree to the processing of personal data
+                            <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div>
+                    <div class="callTo">
                         <button type="button" class="submit measurer">CALL THE MESUARER</button>
                     </div>
                 </form>
-                <div class="piggy">
+            </div>
+            <div class="piggy">
+                <div>
                     <img src="/images/pig.svg" alt="">
-                    Help save 10 - 20% of the cost of materials
+                    <p>Help save 10 - 20% of the<br>cost of materials</p>
                 </div>
             </div>
         </div>
@@ -288,7 +286,7 @@
     <section class="our__clients">
         <div class="container clients">
             <h4 class="title__white">our clients</h4>
-            <div class="camera">
+            <div class="icon">
                 <div class="line"></div>
                 <img src="images/handshake.svg" alt="">
                 <div class="line"></div>
