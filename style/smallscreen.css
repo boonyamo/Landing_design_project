@@ -1,0 +1,355 @@
+.main__banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(../images/main__room__mobile.png);
+    height: 476px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+.container.top {
+    padding: 0px 18px;
+    height: 57px;
+    justify-content: space-between;
+}
+nav.box__menu {
+    display: none;
+}
+.box__contact button {
+    display: none;
+}
+.phonenumber {
+    align-self: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main__banner>.container {
+    padding: 85px 18px;
+    align-items: flex-start;
+}
+h1 {
+    font-size: 23px;
+    line-height: 31px;
+}
+.box__title {
+    padding-bottom: 16px;
+}
+.box__text {
+    font-size: 14px;
+    line-height: 19px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 71px;
+}
+.box__submit {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.calculate {
+    width: 338px;
+}
+.send {
+    display: none;
+}
+.mobile {
+    width: 338px;
+}
+
+.completed__projects>.container {
+    flex-direction: column;
+    padding: 36px 32px;
+    align-items: center;
+}
+.completed__projects {
+    padding-bottom: 30px;
+}
+.block1 {
+    margin-bottom: 75px;
+}
+.block1 p {
+    font-size: 11px;
+    line-height: 17px;
+    padding-top: 26px;
+    text-align: center;
+}
+.block1 h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+}
+.block2 {
+    margin-top: 40px;
+    padding: 0px 5px;
+}
+.block2 h3 {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 10px;
+}
+.block2 div span {
+    font-size: 11px;
+    line-height: 15px;
+}
+.block_arrows {
+    display: none;
+}
+.completed__projects__photo {
+    display: none;
+}
+.completed__projects__mobile {
+    display: flex;
+    background-image: url("../images/completed__projects__mobile.png");
+    width: 340px;
+    height: 241px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed__projects__mobile img {
+    width: 36px;
+    height: 36px;
+    margin: 10px 14px;
+}
+
+.repair__block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+.online__control {
+    background-color: #131313;
+    position: relative;
+    bottom: 0px;
+}
+.online__control>.container {
+    flex-direction: column;
+    padding: 0px 18px;
+    align-items: center;
+}
+.online__control p {
+    font-size: 11px;
+    line-height: 19px;
+    padding: 0px 0px;
+    color:rgb(255, 255, 255)
+}
+hr {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.apply__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.apply__form input {
+    width: auto;
+}
+.apply input {
+    border-bottom: 1px solid #ffffff;
+}
+.apply label,
+input {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label.checkbox {
+    color: #ffffff;
+
+}
+.apply input::placeholder {
+    color: #ffffff;
+  }
+.apply {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+.apply__form div:nth-child(3) {
+    order: 3;
+}
+.apply__form div:nth-child(4){
+    order: 2;
+    margin: 0px;
+    align-self: flex-start;
+}
+
+button.submit.online {
+    position: relative;
+    top: 40px;
+    width: 340px;
+}
+.renovation.mobilescreen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/renovation_mob.png");
+    width: 340px;
+    height: 207px;
+    background-repeat: no-repeat;
+}
+.play {
+    background-image: url(../images/play_button.svg);
+    background-size: contain;
+    position: relative;
+    top: 35%;
+    left: 40%;
+    width: 60px;
+    height: 60px;
+}
+.types__of__repair>.container {
+    padding: 0px 18px;
+    position: relative;
+    top: 329px;
+}
+.types__of__repair {
+    position: relative;
+    bottom: 265px;
+}
+h4 {
+    font-size: 22px;
+}
+.repair__type__ {
+    top: 230px;
+    left: 0;
+    padding: 20px 60px 25px 35px;
+}
+.repair__type {
+    top: 20px;
+    padding-bottom: 155px;
+} 
+
+.repair__type img {
+    width: 340px;
+    height: 365px;
+}
+.types__of__repair li {
+    line-height: 24px;
+}
+.repair__type >.price {
+    top: 455px;
+    left: 0px;
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+    padding: 5px 5px;
+}
+.repair__type__ p {
+    font-size: 15px;
+}
+.request, .piggy {
+    display: none;
+}
+.mobile__fantasies {
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    text-align: center;
+    padding: 20px 20px;
+}
+.wildest__fantasies {
+    display: none;
+}
+.our__clients {
+    display: none;
+}
+.wildest__fantasies__sm > .container {
+    padding: 0px 18px;
+}
+section.wildest__fantasies__sm {
+    position: relative;
+    top: 121px;
+    /* bottom: 220px; */
+}
+.fantasies__smallsceen {
+    display: flex;
+    flex-direction: column;
+}
+.fantasies__mobile {
+    display: flex;
+    background-image: url("../images/cozy__room_small.png");
+    width: 340px;
+    height: 241px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;   
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__map>.container {
+    padding: 100px 18px;
+    background-image: none;
+    background-color: #181818;
+    height: auto;
+}
+.question__form {
+    padding: 70px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0px, -10px);
+    position: relative;
+    bottom: 0px;
+    background: none;
+}
+.question__form h4 {
+    padding-bottom: 52px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 35px;
+    order: 2;
+    background-color: #181818;
+    padding: 0px 5px;
+}
+.address p {
+    font-size: 18px;
+    padding: 15px 0px;
+    line-height: 25px;
+}
+
+.address img {
+    border: 10px solid #E3B873;
+}
+
+.question__form>div:nth-of-type(1) {
+    padding-bottom: 63px;
+}
+.question__form>div:nth-of-type(2) {
+    padding-bottom: 63px;
+}
+.question__form>div:nth-of-type(3) {
+    padding-bottom: 24px;
+}
+.question__form>div:nth-of-type(5) {
+    order: 3;
+    padding-top: 60px;
+}
+.question__form>.agreeTo {
+    order: 2;
+    padding-top: 0px;
+    margin: 0;
+}
+.submit.question {
+    width: 340px;
+    height: 51px;
+}
+.map_smallscreen {
+    order: 1;
+    display: block;
+    position: relative;
+    top: 0px;
+    background-color: #181818;
+}
+
+.map {
+    display: none;
+}
+
+footer {
+    display: none;
+}
