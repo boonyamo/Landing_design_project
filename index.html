@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IC "Repair Design Project"</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="smallscreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 375px)" href="mobilecreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smallscreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="style/mobilecreen.css">
 </head>
 
 <body>
@@ -39,6 +39,7 @@
             <div class="box__submit">
                 <button type="button" class="submit calculate">CALCULATE THE COST</button>
                 <button type="button" class="submit send">SUBMIT YOUR APPLICATION </button>
+                <button type="button" class="submit mobile">APPLICATION</button>
             </div>
         </div>
     </section>
@@ -51,6 +52,10 @@
                     </h2>
                     <p>Only a small part of the work performed by our company is presented on the site. For 14 years on
                         in the construction<br>market we have made happy more than 1000 families</p>
+                </div>
+                <div class="completed__projects__mobile">
+                    <img src="images/arrow__left.svg" alt="arrow left">
+                    <img src="images/arrow__right.svg" alt="arrow right">
                 </div>
                 <div class="block2">
                     <div>
@@ -108,15 +113,14 @@
                 <img src="images/camera.svg" alt="camera">
                 <div class="line"></div>
             </div>
-            <div class="renovation">
+            <div class="renovation mobilescreen">
                 <div class="renovation play"></div>
             </div>
             <hr>
             <p>
-                At each facility, a camera is installed that broadcasts the progress of work on the<br>clock. At any
-                time,
-                you can go to our website and monitor the progress of work in<br>your apartment. You can watch the live
-                broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
+                you can go to our website and monitor the progress of work in your apartment. You can watch the live
+                broadcast from one of our facilities! Leave a request below and you will receive a link to the
                 broadcast.
             </p>
             <form class="apply__form">
@@ -151,62 +155,51 @@
             <div class="repair__block">
                 <div class="repair__type">
                     <img src="images/redecorating.jpeg" alt="redecorating">
-                    <div class="repair__type__desc">
-                        <div>
-                            <p>Redecorating</p>
-                            <ul>
-                                <li>Dismantling of old coatings</li>
-                                <li>Wallpapering</li>
-                                <li>Painting walls and ceilings</li>
-                                <li>Laying flooring</li>
-                                <li>Replacing plumbing</li>
-                                <li>Replacing sockets and switches</li>
-                                <li>Replacing doors</li>
-                            </ul>
-                        </div>
-                        <div class="price">from 900 rub/m<sup>2</sup>
-                        </div>
+                    <div class="repair__type__">
+                        <p>Redecorating</p>
+                        <ul>
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
                     </div>
+                    <div class="price">from 900 rub/m<sup>2</sup></div>
                 </div>
                 <div class="repair__type">
                     <img src="images/overhaul.jpeg" alt="overhaul">
-                    <div class="repair__type__desc">
-                        <div>
-                            <p>Overhaul</p>
-                            <ul>
-                                <li>Dismantling of old coatings</li>
-                                <li>Wallpapering</li>
-                                <li>Painting walls and ceilings</li>
-                                <li>Laying flooring</li>
-                                <li>Replacing plumbing</li>
-                                <li>Replacing sockets and switches</li>
-                                <li>Replacing doors</li>
-                            </ul>
-                        </div>
-                        <div class="price">
-                            from 1800 rub/m<sup>2</sup>
-                        </div>
+                    <div class="repair__type__">
+                        <p>Overhaul</p>
+                        <ul>
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
                     </div>
+                    <div class="price">from 1800 rub/m<sup>2</sup></div>
                 </div>
                 <div class="repair__type">
                     <img src="images/designer__repair.jpeg" alt="designer repair">
-                    <div class="repair__type__desc">
-                        <div>
-                            <p>Designer repair</p>
-                            <ul>
-                                <li>Dismantling of old coatings</li>
-                                <li>Wallpapering</li>
-                                <li>Painting walls and ceilings</li>
-                                <li>Laying flooring</li>
-                                <li>Replacing plumbing</li>
-                                <li>Replacing sockets and switches</li>
-                                <li>Replacing doors</li>
-                            </ul>
-                        </div>
-                        <div class="price">
-                            from 4000 rub/m<sup>2</sup>
-                        </div>
+                    <div class="repair__type__">
+                        <p>Designer repair</p>
+                        <ul>
+                            <li>Dismantling of old coatings</li>
+                            <li>Wallpapering</li>
+                            <li>Painting walls and ceilings</li>
+                            <li>Laying flooring</li>
+                            <li>Replacing plumbing</li>
+                            <li>Replacing sockets and switches</li>
+                            <li>Replacing doors</li>
+                        </ul>
                     </div>
+                    <div class="price">from 4000 rub/m<sup>2</sup></div>
                 </div>
             </div>
             <div class="request">
@@ -263,8 +256,17 @@
 
         </div>
     </section>
+    <section class="wildest__fantasies__sm">
+        <div class="container fantasies__smallsceen">
+            <h2 class="mobile__fantasies">We realize your wildest fantasies</h2>
+            <div class="fantasies__mobile">
+                <img src="images/arrow__left.svg" alt="arrow left">
+                <img src="images/arrow__right.svg" alt="arrow right">
+            </div>
+        </div>
+    </section>
     <section class="wildest__fantasies">
-        <div class="container fantasies">
+        <div class="container fantasies smallsceen">
             <div class="fantasy__type">
                 <h2>We realize your<br>wildest fantasies</h2>
                 <ul>
@@ -340,7 +342,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="/images/Kiriev.png" class="persona__photo" alt="Kiriev">
+                    <img src="images/Kiriev.png" class="persona__photo" alt="Kiriev">
                     <div class="personsa__name">
                         <p>Kiriev Egor Leonidovich</p>
                     </div>
@@ -356,12 +358,17 @@
                     </div>
                     <div class="persona__task">
                         <div class="area"><img src="images/area.svg" alt="area">56 m<sup>2</sup></div>
-                        <div class="duaration"><img src="/images/duaration.svg" alt="duaration">86 DAYS</div>
+                        <div class="duaration"><img src="images/duaration.svg" alt="duaration">86 DAYS</div>
                     </div>
                 </div>
             </div>
+            <div class="cityscape">
+                <img src="/images/cityscape1.svg" alt="cityscape">
+                <img src="/images/cityscape2.svg" alt="cityscape">
+            </div>
         </div>
     </section>
+
     <section class="contact__map">
         <div class="container">
             <form class="question__form">
@@ -389,7 +396,7 @@
                 </div>
             </form>
             <div class="address">
-                <p>Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel +7 (928) 768 32 29</p>
+                <p>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
                 <div class="mail__insta">
                     <img src="images/mail.svg" alt="mail">
                     <img src="images/insta.svg" alt="insta">
@@ -397,6 +404,9 @@
             </div>
             <div class="map">
                 <img src="images/map.png" alt="map">
+            </div>
+            <div class="map_smallscreen">
+                <img src="images/map_smallscreen.png" alt="map">
             </div>
         </div>
     </section>
