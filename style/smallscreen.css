@@ -103,6 +103,10 @@ h1 {
 .completed__projects__photo {
     /* display: none; */
 }
+.projects__photo img {
+    max-width: 679px;
+    width: 100%;
+}
 .completed__projects__mobile {
     display: none;
 }
@@ -354,9 +358,5 @@ section.wildest__fantasies__sm {
     bottom: 0px;
     max-width: 925px;
     width: 100%;
-    height: 466px;
-}
-
-footer {
-
+    height: auto;
 }
