@@ -16,10 +16,14 @@ nav.box__menu {
 .box__contact button {
     display: none;
 }
+.box__company {
+    font-size: 11px;
+}
 .phonenumber {
     align-self: center;
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 11px;
 }
 .main__banner>.container {
     padding: 85px 18px;

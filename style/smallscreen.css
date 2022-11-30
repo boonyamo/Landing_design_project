@@ -13,30 +13,34 @@
 nav.box__menu {
     display: none;
 }
+.box__company {
+    font-size: 14px;
+}
 .box__contact button {
     display: none;
 }
 .phonenumber {
     align-self: center;
     color: #FFFFFF;
+    font-size: 14px;
     text-decoration: none;
 }
 .main__banner>.container {
-    padding: 85px 18px;
+    padding: 55px 18px;
     align-items: flex-start;
 }
 h1 {
-    font-size: 23px;
-    line-height: 31px;
+    /* font-size: 24px; */
+    /* line-height: 31px; */
 }
 .box__title {
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 .box__text {
-    font-size: 14px;
-    line-height: 19px;
+    /* font-size: 14px; */
+    /* line-height: 20px; */
     color: rgb(255, 255, 255);
-    margin-bottom: 71px;
+    margin-bottom: 20px;
 }
 .box__submit {
     display: flex;
