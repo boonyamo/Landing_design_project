@@ -262,11 +262,11 @@ h4 {
 section.wildest__fantasies__sm {
     position: relative;
     top: 121px;
-    /* bottom: 220px; */
 }
 .fantasies__smallsceen {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .fantasies__mobile {
     display: flex;
@@ -284,6 +284,7 @@ section.wildest__fantasies__sm {
     background-image: none;
     background-color: #181818;
     height: auto;
+    align-items: center;
 }
 .question__form {
     padding: 70px 0px;
