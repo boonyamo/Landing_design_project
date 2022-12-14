@@ -1,0 +1,52 @@
+.container {
+    padding: 0px 40px;
+}
+.container.top {
+    padding: 0px 30px;
+}
+.personas {
+    flex-direction: column;
+}
+.question__form {
+    padding: 50px 50px;
+    margin: 10px 30px;
+}
+.address {
+    padding: 0px 100px;
+}
+.outer {
+    display: none;
+}
+.wildest__fantasies>.container {
+    padding: 0px 60px;
+}
+.fantasy__type {
+    margin-right: 25px;
+    flex: 1;
+}
+.fantasy__gallery {
+    flex: 2;
+}
+img.img1 {
+    top: 100px;
+}
+img.img4 {
+    bottom: 200px;
+}
+.request__benefits {
+    padding-left: 30px;
+    padding-right: 38px; 
+}
+.request__form {
+    margin-right: 30px;
+    margin-left: 20px; 
+}
+.piggy {
+    margin: 15px 150px;
+}
+.repair__type >.price {
+    top: 580px;
+}
+.online__control p {
+    padding: 0px 80px;
+}

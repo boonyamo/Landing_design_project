@@ -219,18 +219,18 @@ h4 {
 }
 
 /********************button in main__banner********************/
-.calculate {
+.calculate, .send {
   width: 207px;
   height: 51px;
 }
 
-.send, .mobile {
-  width: 207px;
-  height: 51px;
+.send {
   border: 1px solid white;
   background: none;
 }
-
+.mobile {
+  display: none;
+}
 
 /********************button in apply__form********************/
 .measurer,
@@ -343,7 +343,12 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-
+.projects__photo img{
+  max-width: 679px;
+  max-height: 482px;
+  width: 100%;
+  height: auto;
+}
 .block_arrows {
   display: flex;
   gap: 20px;
@@ -443,19 +448,31 @@ h4 {
   text-align: center;
   padding: 0px 180px;
 }
-
+.wrapper {
+  max-width: 817px;
+  width: 100%;
+  height: auto;
+}
 .renovation {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/renovation.png");
-  width: 817px;
-  height: 434px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url(../images/renovation.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 434px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play {
   background-image: url("../images/play_button.svg");
-  position: relative;
-  top: 150px;
-  left: 343px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 85px;
+  width: 85px;
+
 }
 
 hr {
@@ -677,9 +694,11 @@ label.checkbox.white {
   align-items: center;
 }
 
-.repair__prices img {
-  width: 392px;
-  height: 421px;
+.repair__type img {
+  max-width: 392px;
+  max-height: 421px;
+  width: 100%;
+  height: auto;
 }
 
 .repair__block {
@@ -849,21 +868,28 @@ label.checkbox.white {
 img.img1 {
   position: relative;
   top: 135px;
+  width: 100%;
 }
 
 img.img2 {
   position: relative;
   bottom: 73px;
+  width: 100%;
+  max-width: 354px;
 }
 
 img.img3 {
   position: relative;
   bottom: 30px;
+  width: 100%;
+  max-width: 354px;
 }
 
 img.img4 {
   position: relative;
   bottom: 250px;
+  width: 100%;
+  max-width: 354px;
 }
 
 .wildest__fantasies>.container {
@@ -903,21 +929,34 @@ img.img4 {
 section.our__clients {
   position: relative;
 }
-.cityscape {
+
+.outer {
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  top: 167px;
-  display: flex;
+  top: 170px;
+  width: 100%;
+  height: auto;
 }
-.cityscape img {
-  transform: scaleX(-1);
-  width: 720px;
+.itemWallpaper1, .itemWallpaper2  {
+  background: url("../images/cityscape.svg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  display: block;
+  width: 718px;
+  height: 771px;
 }
+.itemWallpaper1 {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .our__clients>.container {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 325px;
   row-gap: 10px;
+  position: relative;
+  padding-bottom: 350px;
 }
 
 .clients p {
@@ -933,7 +972,6 @@ section.our__clients {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  grid-column: 1/8;
 }
 
 .personas>div {
@@ -1003,6 +1041,7 @@ div>.persona__photo {
   align-items: center;
 }
 
+
 .contact__map>.container {
   display: flex;
   flex-direction: column;
@@ -1056,6 +1095,9 @@ div>.persona__photo {
 .map img {
   position: relative;
   bottom: 175px;
+  width: 100%;
+  max-width: 925px;
+  height: auto;
 }
 .map_smallscreen {
   display: none;

@@ -55,6 +55,7 @@ h1 {
 }
 .mobile {
     width: 338px;
+    display: block;
 }
 
 .completed__projects>.container {
