@@ -150,6 +150,7 @@ hr {
 }
 .apply__form input {
     width: auto;
+    color: #131313;
 }
 .apply input {
     border-bottom: 1px solid #ffffff;

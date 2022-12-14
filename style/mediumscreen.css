@@ -154,9 +154,11 @@ hr {
 }
 .apply__form input {
     width: auto;
+    color: #ffffff;
 }
 .apply input {
     border-bottom: 1px solid #ffffff;
+    color: #ffffff;
 }
 .apply label,
 input {
@@ -206,11 +208,11 @@ button.submit.online {
 .types__of__repair>.container {
     padding: 0px 18px;
     position: relative;
-    top: 329px;
+    top: 105px;
 }
 .types__of__repair {
     position: relative;
-    bottom: 265px;
+    bottom: 55px;
 }
 h4 {
     font-size: 22px;

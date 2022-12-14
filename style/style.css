@@ -333,6 +333,7 @@ h4 {
 .completed__projects__desc {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .block_arrows {
@@ -497,7 +498,7 @@ input {
 
 .apply.white label,
 input {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   background: none;
   padding: 0;
 }
@@ -543,6 +544,7 @@ input {
   width: 231px;
   display: flex;
   flex-direction: column;
+  color: #131313;
 }
 
 .request__form {
